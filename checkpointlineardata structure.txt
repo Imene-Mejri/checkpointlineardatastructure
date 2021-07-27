@@ -1,0 +1,51 @@
+
+ \\ problem number one
+
+
+
+
+
+Algorithme array_sum_overlapping
+var 
+n:integer
+tab1:array of integer[n]
+tab2:array of integer[n]
+sum :=0 
+
+begin
+write('enter the first tab')
+read tab1[i]
+write ('enter the second tab')
+read tab2[j]
+ for i :=1 to n do
+   for j := 1 to n do
+     if tab1[i] <> tab2[j]  then 
+       sum:= sum + tab1[i]
+     end if 
+   end for 
+  end for
+read (sum)
+       
+end
+
+
+
+
+
+                     \\ problem number two
+
+
+
+algorithme hash-tab
+var
+htab1:hash-table<integer,integer>
+htab2:hash-table<integer,integer>
+i,j,index:integer
+sum:=0
+begin
+if htab1(index,i) = htab2(index,j) then 
+sum := sum + htab1[i]
+end if 
+write (sum)
+end algorithme
+end 
